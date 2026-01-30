@@ -1,12 +1,21 @@
-class bankaccount:
-    def __init__(self, balance, fullmark):
+class BankAccount:
+    def __init__(self, balance):
         self.balance = balance
-        self.fullmark = fullmark
-        
+    # multiply 
+    # divide 
+    def __sub__(self, other):
+        if isinstance(other, BankAccount):
+            new_balance = self.balance - other.balance
+            new_account = BankAccount(new_balance)
+            return new_account
+        return None
+
     def __add__(self, other):
-        self.balance += other.balance
-        
+        if isinstance(other, BankAccount):
+            new_balance = self.balance + other.balance
+            new_account = BankAccount(new_balance)
+            return new_account
+        return None
+
     def __str__(self):
-        return f"Balance: {self.balance}"
-
-
+        return f"BankAccount: {self.balance:,.2f}"
