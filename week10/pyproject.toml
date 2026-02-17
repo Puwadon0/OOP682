@@ -1,0 +1,12 @@
+[project]
+name = "oop682"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "log_viewer",
+]
