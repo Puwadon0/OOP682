@@ -1,15 +1,12 @@
 [project]
-name = "week9"
+name = "oop682"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
-dependencies = [
-    "pyside6>=6.10.1",
-]
+requires-python = ">=3.10"
+dependencies = []
 
 [tool.uv.workspace]
 members = [
-    "fastapi-lab",
-    "week10",
+    "log_viewer",
 ]
